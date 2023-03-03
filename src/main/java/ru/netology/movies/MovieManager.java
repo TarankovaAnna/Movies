@@ -9,10 +9,12 @@ public class MovieManager {
         this.limit = limit;
 
     }
+
     public MovieManager() {
         this.limit = 10;
     }
-    public void add (String movie) {
+
+    public void add(String movie) {
         String[] tmp = new String[movies.length + 1];
         for (int i = 0; i < movies.length; i++) {
             tmp[i] = movies[i];
@@ -36,7 +38,7 @@ public class MovieManager {
         }
         String[] result = new String[resultLength];
         for (int i = 0; i < result.length; i++) {
-            result[i] = movies [movies.length - 1 - i];
+            result[i] = movies[movies.length - 1 - i];
         }
         return result;
 
